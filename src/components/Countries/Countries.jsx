@@ -1,18 +1,15 @@
 import React from 'react';
 import { use } from 'react';
+import Country from '../Country/Country';
 
 const Countries = ({ countryAllPromise }) => {
     const countries = use(countryAllPromise);
-    console.log(countries)
+    // console.log(countries)
     return (
         <div>
-            <ul>
-                <li>Bangladesh</li>
-                <li>Qatar</li>
-                <li>England</li>
-                <li>Australia</li>
-                <li>Germany</li>
-            </ul>
+            {
+                countries.map((country, index) => <Country key={index} country={country}></Country>)
+            }
         </div>
     );
 };
