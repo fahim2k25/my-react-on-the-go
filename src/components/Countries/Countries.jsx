@@ -4,7 +4,7 @@ import Country from '../Country/Country';
 
 const Countries = ({ countryAllPromise }) => {
     const countries = use(countryAllPromise);
-    // console.log(countries)
+
     return (
         <div>
             {
