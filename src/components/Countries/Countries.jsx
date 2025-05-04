@@ -1,6 +1,9 @@
 import React from 'react';
+import { use } from 'react';
 
-const Countries = () => {
+const Countries = ({ countryAllPromise }) => {
+    const countries = use(countryAllPromise);
+    console.log(countries)
     return (
         <div>
             <ul>
