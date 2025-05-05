@@ -3,6 +3,10 @@ import './Country.css'
 
 const Country = ({ country }) => {
     const { name, altSpellings, continents, population, flags, independent } = country;
+    
+    const handleVisitClick = () => {
+        console.log("clicked successfully");
+    } 
 
     return (
         <div className="country">
@@ -17,6 +21,7 @@ const Country = ({ country }) => {
             <p>Continent: {continents[0] ? continents[0] : "N/A"}</p>
             <p>Population: {population.toLocaleString()}</p>
             <p>Independence: {independent ? "Yes, free" : "No, not free"}</p>
+            <button className='btn btn-accent' onClick={handleVisitClick}>Not Visited</button>
         </div>
     );
 };
