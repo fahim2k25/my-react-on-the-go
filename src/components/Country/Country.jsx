@@ -11,7 +11,6 @@ const Country = ({ country }) => {
 
     // adding event handler
     const handleVisitClick = () => {
-        
         setVisit(true);
     } 
 
@@ -28,7 +27,7 @@ const Country = ({ country }) => {
             <p>Continent: {continents[0] ? continents[0] : "N/A"}</p>
             <p>Population: {population.toLocaleString()}</p>
             <p>Independence: {independent ? "Yes, free" : "No, not free"}</p>
-            <button className='btn btn-accent' onClick={handleVisitClick}>{
+            <button className={visit ? 'btn btn-accent' : 'btn btn-error'} onClick={handleVisitClick}>{
                 visit ? "Visited" : "Not Visited"
                 }</button>
         </div>
