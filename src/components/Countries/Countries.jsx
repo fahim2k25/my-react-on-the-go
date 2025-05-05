@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { use } from 'react';
 import Country from '../Country/Country';
 import './Countries.css';
-import { Linter } from 'eslint';
 
 const Countries = ({ countryAllPromise }) => {
 
