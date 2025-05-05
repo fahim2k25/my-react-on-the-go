@@ -1,10 +1,11 @@
 import React from 'react';
+import './Country.css'
 
 const Country = ({ country }) => {
     const { name, altSpellings, continents, population, flags, independent } = country;
 
     return (
-        <div className="border-2 border-lime-700 rounded-2xl my-4">
+        <div className="country">
             <section>
                 <img src={flags["png"]} alt={flags["alt"]} />
             </section>
