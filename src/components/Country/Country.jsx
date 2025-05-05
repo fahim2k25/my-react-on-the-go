@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Country.css'
 
-const Country = ({ country }) => {
+const Country = ({ country, handleVisitedCountries }) => {
 
     //destructuring the properties sent from the Countries component
     const { name, altSpellings, continents, population, flags, independent } = country;
@@ -12,6 +12,7 @@ const Country = ({ country }) => {
     // adding event handler
     const handleVisitClick = () => {
         setVisit(!visit);
+        handleVisitedCountries(name["common"]);
     } 
 
     return (
