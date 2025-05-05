@@ -11,7 +11,7 @@ const Country = ({ country }) => {
 
     // adding event handler
     const handleVisitClick = () => {
-        setVisit(true);
+        setVisit(!visit);
     } 
 
     return (

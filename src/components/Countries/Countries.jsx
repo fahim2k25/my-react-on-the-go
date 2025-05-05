@@ -7,10 +7,13 @@ const Countries = ({ countryAllPromise }) => {
     const countries = use(countryAllPromise);
 
     return (
-        <div className='countries'>
-            {
-                countries.map((country, index) => <Country key={index} country={country}></Country>)
-            }
+        <div>
+
+            <section className='countries'>
+                {
+                    countries.map((country, index) => <Country key={index} country={country}></Country>)
+                }
+            </section>
         </div>
     );
 };
