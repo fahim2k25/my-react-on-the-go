@@ -15,9 +15,9 @@ const Country = ({ country }) => {
     } 
 
     return (
-        <div className="country">
+        <div className={`country ${ visit && 'country-visited'}`}>
             <section>
-                <img src={flags["png"]} alt={flags["alt"]} />
+                <img className="w-64 h-40" src={flags["png"]} alt={flags["alt"]} />
             </section>
             <p>Name: {name["common"] ? name["common"] : "N/A"}</p>
             <p>Official Name: {name["official"] ? name["official"] : "N/A"}</p>
