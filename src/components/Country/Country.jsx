@@ -33,7 +33,7 @@ const Country = ({ country, handleVisitedCountries }) => {
         //         }</button>
         // </div>
 
-        <div className={`card bg-base-100 w-96 shadow-sm ${visit && 'country-visited'}`}>
+        <div className={`card bg-base-100 w-96 shadow-2xl ${visit && 'country-visited'}`}>
             <figure>
                 <img
                     src={flags["png"]}
