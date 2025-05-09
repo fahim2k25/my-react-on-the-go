@@ -48,8 +48,8 @@ const Country = ({ country, handleVisitedCountries }) => {
                 <p>Continent: {continents[0] ? continents[0] : "N/A"}</p>
                 <p>Population: {population.toLocaleString()}</p>
                 <p>Independence: {independent ? "Yes, free" : "No, not free"}</p>
-                <div className={visit ? 'card-actions btn btn-accent' : 'card-actions btn btn-error'} onClick={handleVisitClick}>
-                    <button className="btn btn-primary">
+                <div className='card-actions'>
+                    <button  onClick={handleVisitClick} className={visit ? 'btn btn-accent' : 'btn btn-error'}>
                         {
                             visit ? "Visited" : "Not Visited"
                         }
